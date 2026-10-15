@@ -1,8 +1,9 @@
 class Bellek < Formula
   desc "Shared memory for Claude Code sessions: hooks, MCP bridge and CLI"
   homepage "https://bellek.si"
-  version "0.1.0"
   license "Apache-2.0"
+
+  depends_on :macos
 
   on_macos do
     on_arm do
@@ -14,8 +15,6 @@ class Bellek < Formula
       sha256 "d490ea62e28255b56dae81a66f222f61645798e304ab9c057ba3a0e00c7ecc0b"
     end
   end
-
-  depends_on :macos
 
   def install
     bin.install "bellek"
