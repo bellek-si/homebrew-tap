@@ -7,12 +7,12 @@ class Bellek < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/bellek-si/bellek/releases/download/v0.1.0/bellek-darwin-arm64.tar.gz"
-      sha256 "b6d9da96ddf60dac533609566766f64c57bc49b8fed1882310b2a57971c86bad"
+      url "https://github.com/bellek-si/bellek/releases/download/v0.2.0/bellek-darwin-arm64.tar.gz"
+      sha256 "3a3d372527a24796dbe29f6ad867dee855fd5aca3e65d1e257fcd85e25c35191"
     end
     on_intel do
-      url "https://github.com/bellek-si/bellek/releases/download/v0.1.0/bellek-darwin-amd64.tar.gz"
-      sha256 "d490ea62e28255b56dae81a66f222f61645798e304ab9c057ba3a0e00c7ecc0b"
+      url "https://github.com/bellek-si/bellek/releases/download/v0.2.0/bellek-darwin-amd64.tar.gz"
+      sha256 "48b886388045c21b84a74e7914662357796972994756ab1ce66f9b4c49f965e2"
     end
   end
 
@@ -21,6 +21,6 @@ class Bellek < Formula
   end
 
   test do
-    assert_equal "v0.1.0", shell_output("#{bin}/bellek version").strip
+    assert_equal "v0.2.0", shell_output("#{bin}/bellek version").strip
   end
 end
